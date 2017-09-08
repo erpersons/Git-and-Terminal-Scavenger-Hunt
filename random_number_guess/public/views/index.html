@@ -18,29 +18,36 @@
         <br> Medium <input type='radio' name="level" class='radioButton' value=50>
         <br> Hard <input type='radio' name="level" class='radioButton' value=100>
         <br>
-        <input type='submit' id='startButton'>
+        <input type='submit' id='startButton' value='Start Game'>
     </form>
     <br></br>
-    <article>
-        <form id="playerData">
-            <input id="playerOne" name="guess" type="number" placeholder="Player 1 Guess"></input>
-            <p id="playerOneClue"></p>
-            <br></br>
-            <input id="playerTwo" name="guess" type="number" placeholder="Player 2 Guess"></input>
-            <p id="playerTwoClue"></p>
-            <br></br>
-            <input id="playerThree" name="guess" type="number" placeholder="Player 3 Guess"></input>
-            <p id="playerThreeClue"></p>
-            <br></br>
-            <input id="playerFour" name="guess" type="number" placeholder="Player 4 Guess"></input>
-            <p id="playerFourClue"></p>
-            <br></br>
-            <input type='submit' id='playButton'>
+    <div id="gameArea">
+        <article>
+            <h3>Guess Counter: <span id="currentGuesses">0</span></h3>
+            <h3>Guess Limit: <span id="guessLimit">0</span></h3>
+        </article>
+        <article>
+            <form id="playerData">
+                <input id="playerOne" name="guess" type="number" placeholder="Player 1 Guess"></input>
+                <p id="playerOneClue"></p>
+                <br></br>
+                <input id="playerTwo" name="guess" type="number" placeholder="Player 2 Guess"></input>
+                <p id="playerTwoClue"></p>
+                <br></br>
+                <input id="playerThree" name="guess" type="number" placeholder="Player 3 Guess"></input>
+                <p id="playerThreeClue"></p>
+                <br></br>
+                <input id="playerFour" name="guess" type="number" placeholder="Player 4 Guess"></input>
+                <p id="playerFourClue"></p>
+                <br></br>
+                <input type='submit' id='playButton' value='Make Guess'>
+                <input type='submit' id='rageQuit' value='Rage Quit'>
 
-        </form>
+            </form>
 
 
-    </article>
+        </article>
+    </div>
 
 </body>
 
