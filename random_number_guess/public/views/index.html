@@ -14,14 +14,33 @@
 <body>
     <h1>Random Number Guessing Game</h1>
     <form id='difficultySetting'>
-        Easy <input type='radio' name = "level" class='radioButton' value=10>
-        <br>
-        Medium <input type='radio' name = "level" class='radioButton' value=50>
-        <br>
-        Hard <input type='radio' name = "level" class='radioButton' value=100>
+        Easy <input type='radio' name="level" class='radioButton' value=10>
+        <br> Medium <input type='radio' name="level" class='radioButton' value=50>
+        <br> Hard <input type='radio' name="level" class='radioButton' value=100>
         <br>
         <input type='submit' id='startButton'>
     </form>
+    <br></br>
+    <article>
+        <form id="playerData">
+            <input id="playerOne" name="guess" type="number" placeholder="Player 1 Guess"></input>
+            <p id="playerOneClue"></p>
+            <br></br>
+            <input id="playerTwo" name="guess" type="number" placeholder="Player 2 Guess"></input>
+            <p id="playerTwoClue"></p>
+            <br></br>
+            <input id="playerThree" name="guess" type="number" placeholder="Player 3 Guess"></input>
+            <p id="playerThreeClue"></p>
+            <br></br>
+            <input id="playerFour" name="guess" type="number" placeholder="Player 4 Guess"></input>
+            <p id="playerFourClue"></p>
+            <br></br>
+            <input type='submit' id='playButton'>
+
+        </form>
+
+
+    </article>
 
 </body>
 
