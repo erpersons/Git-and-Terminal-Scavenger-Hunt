@@ -3,6 +3,11 @@ var app = express();
 var path = require('path');
 var port = 5000;
 
+function randomNumberGen(max) {
+    var randomNumb = Math.floor(Math.random()*max);
+    return randomNumb;
+}
+
  // middleware
 app.use(express.static('public'));
 
