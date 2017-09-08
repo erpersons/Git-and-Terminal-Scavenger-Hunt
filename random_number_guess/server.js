@@ -21,3 +21,11 @@ app.get('/', function( req, res ){
     res.sendFile(path.join(__dirname, './public/views/index.html'));
     console.log('inside app.get');
 })
+
+app.get('/game', function(req, res) {
+    console.log('received request');
+    var numbObj = {
+        gameNumber: randomNumberGen(100)
+        };
+    res.send(numbObj);
+});
